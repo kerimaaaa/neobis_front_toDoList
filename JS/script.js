@@ -52,7 +52,7 @@ toDoList.addEventListener('click', function (e) {
 
 function createLocalStorage() {
   localStorage.setItem('tasks', toDoList.innerHTML);
-  localStorage.setItem('username', username.innerHTML)
+  localStorage.setItem('username', username)
 }
 function showTask() {
   toDoList.innerHTML = localStorage.getItem('tasks');
